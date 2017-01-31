@@ -4,8 +4,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import routes from './routes';
 import {Router, browserHistory} from 'react-router';
+import {Provider} from 'react-redux';
+
+import configureStore from './store/configureStore';
+
+const store = configureStore();
 
 ReactDOM.render(
-  <Router routes={routes} history={browserHistory} />,
+  <Provider store={store}>
+    <Router routes={routes} history={browserHistory} />
+  </Provider>,
   document.getElementById('root')
 );

@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+.pagination>li>a.active{
+  background: cornflowerblue;
+  color: #fff;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
