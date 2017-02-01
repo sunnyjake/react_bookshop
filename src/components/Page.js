@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {testFun} from '../actions/testPage'
 
 class Page extends Component{
   render(){
@@ -10,4 +12,10 @@ class Page extends Component{
   }
 }
 
-export default Page;
+// export default Page;
+
+const mapStateToProps ({page}) => {
+  return {page}
+};
+
+export default connect(mapStateToProps, {testFun})(Page);
