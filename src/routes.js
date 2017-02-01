@@ -6,5 +6,6 @@ import App from './App';
 export default(
   <Route path="/" component={App}>
     <Route path="/pages/:page" />
+    <Route path="/test" />
   </Route>
 )

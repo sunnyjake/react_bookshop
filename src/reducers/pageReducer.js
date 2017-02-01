@@ -1,7 +1,12 @@
 export {GET_PAGE_CONTENT} from '../types'
 
 const initialState = {
-  pagesData: {}
+  pagesData: {
+    createdAt: null,
+    currentPage: null,
+    id: null,
+    total: null
+  }
 }
 
 export default(state=initialState, action) => {
